@@ -56,7 +56,7 @@ class ClientsCommanding:
             clients_update, wlist, xlist = select.select(self.clients, [], [], 0.05)
             for client in clients_update :
                 message = client.recv(1024)
-               	self.update(self.str2tab(message, []))
+                self.update(self.str2tab(message, []))
 
         print "listing thread is stoped"
 

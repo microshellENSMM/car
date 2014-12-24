@@ -9,7 +9,7 @@ class LightActivity (Activity) :
     def __init__(self) :
         self.ledFrein = Output(Pin.led)
 
-	
+    
         self.sensors = [Pin.pedaleFrein]
         Activity.__init__(self, False)
 
